@@ -1,0 +1,12 @@
+-express name_of_app
+    -cd into app
+    -edit files (app.js remove view engine if using react)
+-createdb name_of_db 
+-sequelize init
+-configure config.json file as needed
+-npm install 
+-npm install --save pg pg-hstore sequelize
+-sequelize model:generate --name name_of_table --attributes name:value,etc.
+-Add in table associations as necessary
+-sequelize db:migrate
+-Set up routes

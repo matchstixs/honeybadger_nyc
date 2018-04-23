@@ -1,0 +1,23 @@
+// STARTING NEW REACT PROJECT
+    // create-react-app <name of app>
+    // cd into app
+    // npm start
+
+
+
+
+import {  } from "";
+export
+
+// creating a component
+const SubComponent =({}) => {
+    return (
+        
+    )
+}
+
+
+// to render a component
+< -name-    component={this.state.component)    />
+
+npm run start

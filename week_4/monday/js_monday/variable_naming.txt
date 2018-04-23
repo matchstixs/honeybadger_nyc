@@ -1,0 +1,8 @@
+left hand (declaration)=right hand(assignment)
+
+let vs var
+-let does not allow redeclare of variables but allows reassignment
+-useful for external input
+
+const vs let
+-const never changes reassignment or redeclare

@@ -1,0 +1,30 @@
+whenever you add a string to a number you concatnate ex. 1 + "1"= 11
+var conCatString= `${hello} ${name}`;
+
+string.split
+//splits into array but removes split object
+
+string.trim
+//gets rid of white space ex. "  k       "
+
+booleans are valuable when you need the program to make a decision
+null is not really used
+
+undefined is a temporary place holder that gets defined by function
+later on
+
+Nan (not a number) checks for number used to check for string input
+instead of number
+
+conditionals
+//control flow statement that evaluates to true or false
+== checks for condition only
+=== checks for condition and data type
+the only way a // can be false is if there is 2 false
+the only way && can be true is if there is 2 true
+
+if else statements leaks var into the global scope
+
+array.forEach(function(arrayItem)){
+
+}

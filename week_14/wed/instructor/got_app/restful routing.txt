@@ -1,0 +1,23 @@
+function itself must be declared as async for it to work
+
+// INDEX 
+router.get('/', async function(req,res){
+                    ^needs to be declared first before await function can be used
+    const houses = await House.findAll() <- promise
+                    ^ waits for promise before attributting to const
+            res.send(houses);
+        });
+}); 
+
+
+function can be replaced with => should not be used on event handlers, it binds this to parent scope
+=> cannot be named
+should not be used
+
+    // INDEX 
+router.get('/', (req,res) => {
+    House.findAll() 
+        .then(function(houses) {
+            res.send(houses);
+        });
+}); 

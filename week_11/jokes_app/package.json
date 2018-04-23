@@ -1,0 +1,16 @@
+{
+  "name": "jokes_app",
+  "version": "1.0.0",
+  "description": "joke telling app",
+  "main": "jokes.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matcha",
+  "license": "ISC"
+}

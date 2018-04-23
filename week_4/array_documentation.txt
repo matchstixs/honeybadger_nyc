@@ -1,0 +1,31 @@
+arrays can have infinite amount of items
+commas separate arrays  issues with array is ur not guarantee to know positions
+
+/adds item to array
+  array.push()
+  adds to back of array
+  
+  array.unshift()
+  adds to the beginning of array
+
+/remove item from array
+  array.pop()
+  removes from the back
+
+  array.shift()
+  removes from the front
+----Iterate over elements of an array
+
+  array.forEach(function(item))
+  each item in array but returns nothing
+
+  array.map(function(item))
+  will perform function to array and save changes to new arrays
+
+  for (let i=0; i <array.length; i++){
+  console.log(array[i] + 2)
+  }
+*check condition, set variable, perform function, check to see if i<array.length, if true i++
+
+array.split
+splits object with condition into array

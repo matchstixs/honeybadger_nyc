@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Scope/DOM/Event mini-challenges</title>
+  </head>
+  <body>
+    <button type="button" id="buttonRight" name="button">Click me</button>
+    <p id="text"></p>
+    <button type="button" id="buttonNo" name="button">Nah click me</button>
+    <div id=eleLarge>
+      <p>"Don't hover over me"</p>
+    </div>
+    <div>
+    <h1 id="keyPress"></h1>
+    </div>
+    <div>
+      <form id="form" name="logIn" onsubmit="validate()">
+        Username: <input type="text"  id="userName"> 
+        <br>
+        Email: <input type="email" id="eMail"> 
+        <br>
+        Password: <input type="password" id="passWord"> 
+        <br>
+        <input id="submitButton" type="submit">
+      </form>
+    </div>
+    <script src="js/script.js"> </script>
+  </body>
+</html>

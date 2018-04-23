@@ -1,0 +1,30 @@
+how to build an API
+
+-sequalize with CRUD
+
+Create
+Read
+Update
+Destroy
+
+-----------------
+npm install -g sequelize
+npm install -g sequelize-cli
+npm install --save -g sequelize pg pg-hstore
+
+sequelize <brings up documentation>
+
+
+
+express <app name>
+sequelize init 
+-creates models, migrations, seeders folders
+
+createdb <name>
+sequelize model:generate --name <name_of_file> --attributes firstName:string,lastName:string,email:string
+
+edit config file before migrating!
+sequelize db:migrate
+psql -d (for database) <name>
+
+\d to open database on terminal

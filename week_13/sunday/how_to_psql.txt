@@ -1,0 +1,8 @@
+createdb <name>
+psql -d <name> < schema.sql
+psql -d <name> < -load table-
+psql postgres
+\connect <dbname>
+table <name of table>
+
+\q after every query
