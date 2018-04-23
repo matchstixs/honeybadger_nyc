@@ -1,0 +1,11 @@
+ajax makes http requests aka makes external request to get information
+client side is front end code
+server is back end code
+
+-HTTP VERBS-
+get request: pulls information
+post request: sends information
+put/patch request: updates information
+delete request: post request that removes information
+
+api's always returns strings that needs to be parsed back into an object

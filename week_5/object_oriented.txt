@@ -1,0 +1,78 @@
+functions have two results
+
+side effects- which is any result that doesnt return
+ex. console.log9), DOM Manipulation
+
+output- anytime a function returns
+
+map: returns an arrays
+foreach: loops
+
+DOM
+--
+const element = 'html'
+element.addEventListener('click',function(callback)) {
+  callback function
+}
+
+constructors
+--
+function that returns an object
+called with 'new'
+
+prototype
+--
+adds behavior to constructor
+ex. array.prototype.callback = function(){
+  callback function
+}
+
+Class is a object function
+--
+class person {
+  constructor(name, age, height){
+  this.name = name;
+  this.age = age;
+  this.height = height;
+  }
+
+  doSomething(){
+  //function
+  }
+
+  doSomethingElse(){
+  //function
+  }
+}
+
+OOP, Object Oriented Programming
+--
+class Person {
+  constructor(name, age, height){
+  this.name = name;
+  this.age = age;
+  this.height = height;
+  }
+
+class Car {
+  constructor(make, model, color) {
+    this.make = make;
+    this.model = model;
+    this.color = color
+  }
+
+  paint(newColor){
+    this.color = newColor;
+  }
+}
+
+class CarOwner extends Person {
+  constructor(name, age, height) {
+    super(name, age, height);
+    //^grabs all attributes of constructor
+  }
+
+  buyCar(make, model, color) {
+    this.car = new Car(make, model, color);
+  }
+}

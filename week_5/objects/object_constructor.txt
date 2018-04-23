@@ -1,0 +1,88 @@
+object oriented JS: storage system
+  -keys aka variable
+  -can hold any data type
+  -uses : and , keys
+
+  make an object named mustang with the following attributes:
+  -color
+  -class set to muscle
+  -horsepower
+
+const mustang = {
+  color: "red",
+  class: "muscle",
+  horsepower: 500,
+}
+
+
+make an object named toyota with the following attributes:
+  -color
+  -class set to sport
+  -horsepower
+
+const toyota = {
+  color: "blue",
+  class: "sport",
+  horsepower: "120",
+}
+
+  make an object named gallardo with the following attributes:
+  -color
+  -class set to exotic
+  -horsepower
+
+const gallardo = {
+  color: "purple",
+  class: "exotic",
+  horsepower: "300",
+}
+
+
+// MODEL A POKEMON
+const pokemon = {
+// ATTR
+// number - num
+  number: 1,
+// name - str
+  name: "charmander",
+// type - str
+  type: "fire",
+// moves - array
+  moves: ["scratch", "bite", "tackle"],
+// hp - num starting at 100
+  hp: 100
+// behaviors
+// takeDamage - should decrease hp by 10
+  takeDamage: function() {
+    this.hp - 10;
+  },
+// visitPokeCenter - restores hp to 100
+  visitPokeCenter: function() {
+    this.hp = 100
+  },
+// isFainted - return true if hp is less than or equal to 0
+//           - return false if hp is greater than 0
+  isFainted: function() {
+    if (this.hp =< 0) {
+    return true
+    }
+    else if (this.hp > 0){
+    return false
+    },
+  }
+  }
+
+//constructors is a way to create new objects without having to retype everything
+function car(color, make, model, horsepower) {
+  this.color = color;
+  this.make = make;
+  this.model = model;
+  this.horsepower = horsepower;
+}
+
+const llc = new car ('black', 'Acura', 'tlx')
+
+//add new object/key
+car.prototype.paint = function (newColor) {
+  this.color = newColor;
+}

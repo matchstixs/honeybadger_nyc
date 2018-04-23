@@ -1,0 +1,15 @@
+git rebase master - allows refoundation of committed master
+
+git checkout -b <name of branch>
+creates new branch and moves to it
+
+git checkout <name of branch>
+switches over to <name of branch>
+
+git init
+git add .
+git commit -m ""
+git push origin <branchname>
+review pr on git 
+git checkout master
+git pull origin master

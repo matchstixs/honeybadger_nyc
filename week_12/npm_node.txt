@@ -1,0 +1,59 @@
+node.js is a run time environment/program
+node is javascript in your terminal
+
+run time is when application/environment is up
+continuous run or run once at the time of execution
+
+-to use node-
+>terminal/node/enter js
+-exit-
+.exit
+
+-describe npm
+node package manager
+provides a way to leverage 3rd party libraries/frameworks to a node application
+
+-leverage packages in our node.js
+  npm init
+  (creates package.json)
+  package name, description, entry point(js file), author
+
+npm install --save express
+npm install --save-dev morgan
+
+
+control C will kill anything already running
+
+-what is express?
+is a way to write up routes and create a server to run and listen to a specific port
+sends requests to server and returns a response to client
+
+*querystrings can be requested
+static requests get made first -> dynamic request last
+
+-use express/node to host a local server
+
+-navigate to our servers in chrome
+nodemon app.js
+
+
+npm install --save request-promise
+
+npm install --save express-handlebars
+
+
+
+
+
+
+
+what is handlebars -a templating view engine
+npm install --save express-handlebars
+
+Use handlebars to render views by use of {{helpers}}
+{{ renders content with tags }}
+{{{ renders content without tags }}}
+
+npm install --save serve-favicon
+(favicons are the little icons on the left of the tab)
+this needs to be done to protect the server from crashing by having it run once
