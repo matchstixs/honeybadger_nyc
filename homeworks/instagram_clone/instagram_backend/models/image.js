@@ -1,9 +1,11 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   var image = sequelize.define('image', {
-    id: DataTypes.PRIMARYKEY,
-    tag: DataTypes.VARCHAR25,
-    comment: DataTypes.VARCHAR125
+    id: {
+    primaryKey: true
+    },  
+    tag: DataTypes.STRING(25),
+    comment: DataTypes.STRING(125)
   }, {});
   image.associate = function(models) {
     models.image.belongsTo(models.user, {

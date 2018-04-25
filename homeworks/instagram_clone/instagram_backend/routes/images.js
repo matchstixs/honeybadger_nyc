@@ -1,24 +1,25 @@
-import { create } from 'domain';
-
 const express = require('express');
 const router = express.Router();
 const multer = require('multer');
 const upload = multer({ dest: 'uploads/' });
-const Images = require('../models/index').images;
+const Image = require('../models/index').image;
 
-// REVEAL ONE IMAGE
-router.get('/', (req, res) => {
-  images.findById(req.params.id)
-    .then(function(images) {
-      res.send(images);
+
+// REVEAL IMAGE PAGE 
+router.get('/images', (req, res) => {
+  Image.findById(req.params.id)
+    .then(function(image) {
+      res.send(image);
+      res.send("IMAGES ROUTE WORKS")
     });
 });
 
+
 // UPDATE IMAGE OR ADD COMMENT/TAG
 router.put('/:id', (req, res) => {
-  images.findById(req.params.id)
-    .then(function(images){
-      images.update(getBodyParams(req))
+  Image.findById(req.params.id)
+    .then(function(image){
+      image.update(getBodyParams(req))
       .then(function(updateImages){
         res.send(updateImages)
       });
@@ -27,8 +28,8 @@ router.put('/:id', (req, res) => {
 
 // DELETE AN IMAGE
 router.delete('/:id', (req, res) => {
-  images.findById(req.params.id)
-    .then(function(images){
+  Image.findById(req.params.id)
+    .then(function(image){
       image.destroy();
       console.log("IMAGE DESTORYED");
     });
@@ -36,9 +37,9 @@ router.delete('/:id', (req, res) => {
 
 // INDEX SHOW ALL IMAGES
 router.get('/', (req, res) => {
-  images.findAll()
-    .then(function(images){
-      res.send(images);
+  Image.findAll()
+    .then(function(image){
+      res.send(image);
     });
 });
 
