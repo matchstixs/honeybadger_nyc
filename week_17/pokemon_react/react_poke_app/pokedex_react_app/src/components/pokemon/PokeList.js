@@ -9,7 +9,7 @@ class PokeList extends Component {
     };
 
     componentDidMount() {
-        fetch('https://pokeapi.co/api/v2/pokedex/2/')
+        fetch('https://pokeapi.co/api/v2/pokemon-species/?limit=151')
             .then((response) => {
                 response.json().then((pokemon_entries) => {
                     console.log(pokemon_entries);
