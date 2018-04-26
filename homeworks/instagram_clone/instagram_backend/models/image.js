@@ -1,9 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   var image = sequelize.define('image', {
-    id: {
-    primaryKey: true
-    },  
     tag: DataTypes.STRING(25),
     comment: DataTypes.STRING(125)
   }, {});

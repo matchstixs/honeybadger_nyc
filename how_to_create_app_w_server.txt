@@ -7,6 +7,5 @@
 -npm install 
 -npm install --save pg pg-hstore sequelize
 -sequelize model:generate --name name_of_table --attributes name:value,etc.
--Add in table associations as necessary
 -sequelize db:migrate
 -Set up routes

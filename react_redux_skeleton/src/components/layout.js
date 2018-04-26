@@ -13,11 +13,20 @@ class Layout extends Component {
         this.props.tweetsActions.fetchTweets();
     }
 
+    updateUserName() {
+        this.props.userActions.setUserName('John')
+    }
+
     render() {
         const { user, tweets } = this.props;
 
         if(true) {
-            return <button onClick={this.fetchTweets.bind(this)}> load tweets </button>
+            return (
+            <div>
+                <button onClick={this.fetchTweets.bind(this)}> load tweets </button>
+                <button onClick={this.updateUserName.bind(this)}> update username </button>
+                </div>
+            )
         }
 
         const mappedTweets = tweets.map(tweet => <li key={tweet.id}>{tweet.text}</li>);
