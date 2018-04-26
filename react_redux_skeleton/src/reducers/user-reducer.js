@@ -36,7 +36,10 @@ export default function reducer(state = initialState, action) {
                     name: action.payload
                 }
             }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1b71f41613e4820cf180829f4c3b9f173b9488c8
         default:
             return state;
     }
