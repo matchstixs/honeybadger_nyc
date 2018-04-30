@@ -21,7 +21,7 @@ export function createUser(data) {
     return function(dispatch) {
         dispatch({ type: creatingUserType });
         axios.post('/users/signup', data)
-            .then(function() {
+            .then(function(response) {
                 // dispatch success action
                 dispatch({ type: userCreatedType, payload: response.data })
             })
@@ -33,20 +33,4 @@ export function createUser(data) {
     }
 }
 
-export const setUserNameType = 'SET_USER_NAME';
 
-export function setUserName(name) {
-    return {
-        type: setUserNameType,
-        payload: name
-    }
-}
-
-export const setUserAgeType = 'SET_USER_AGE';
-
-export function setUserAge(age) {
-    return {
-        type: setUserAgeType,
-        payload: age
-    }
-}

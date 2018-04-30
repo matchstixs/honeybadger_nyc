@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
-import store from './store';
+import store, { history } from './store';
 import Layout from './components/layout'
 
 const target = document.getElementById('root');
@@ -13,5 +13,5 @@ ReactDOM.render(
             <Layout />
         </ConnectedRouter>
     </Provider>
-            , target
+    , target
 );

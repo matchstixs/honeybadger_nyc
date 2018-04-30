@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 const Login = () => {
     return (
         <div>
-            PLEASE LOGIN
+            WELCOME Login
         </div>
     )
 }
