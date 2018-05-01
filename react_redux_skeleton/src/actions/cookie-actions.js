@@ -10,7 +10,7 @@ export function getCookie(name) {
 
 export const setCookieType = 'SETTING_COOKIE';
 
-export function setCookie(name, value, options= {}) {
+export function setCookie(name, value, options = {}) {
     return function(dispatch) {
         cookies.set(name, value, options);
         dispatch({ type: setCookieType, payload: cookies.get(name) });

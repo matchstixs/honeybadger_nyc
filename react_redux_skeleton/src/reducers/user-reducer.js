@@ -1,8 +1,7 @@
-import { 
-    fetchUserType, 
-    setUserAgeType, 
-    setUserNameType, 
-    userCreatedType
+import {
+    fetchUserType,
+    userCreatedType,
+    userCreationError
 } from '../actions/user-actions';
 
 const initialState = {

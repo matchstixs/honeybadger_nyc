@@ -8,6 +8,6 @@ import cookies from './cookie-reducer';
 export default combineReducers({
     tweets,
     user,
-    cookes,
+    cookies,
     form: formReducer
 });
