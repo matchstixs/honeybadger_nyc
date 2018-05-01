@@ -4,6 +4,7 @@ import { push } from 'react-router-redux';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux'
 import * as userActions from '../../actions/user-actions';
+import * as cookies from 'cookies-js';
 
 class Signup extends Component {
     formHandler(values) {
